@@ -1,0 +1,16 @@
+{
+  "name": "homework-05-oppakuu",
+  "version": "1.0.0",
+  "description": "Implement the code for `Meditation` class to be used as follows: ```typescript const morning_meditation = new Meditation(5); morning_meditation.start(); console.log(`Start meditation`);",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx watch app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsx": "^4.16.0"
+  }
+}
