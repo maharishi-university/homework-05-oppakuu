@@ -60,9 +60,14 @@ interface Recipe {
 }
 
 (async () => {
-    const response = await fetch('https://dummyjson.com/recipes?limit=5');
-    const root: Root = await response.json();
-    for(const recipe of root.recipes) {
-        console.log(`${recipe.id}: Recipe name - ${recipe.name}`);
+    try {
+        const response = await fetch('https://dummyjson.com/recipes?limit=5');
+        const root: Root = await response.json();
+        for(const recipe of root.recipes) {
+            console.log(`${recipe.id}: Recipe name - ${recipe.name}`);
+        }
+    } catch (error) {
+        console.error(error.message);
     }
+
 }) ();
