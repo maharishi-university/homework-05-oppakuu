@@ -3,12 +3,10 @@ class Meditation {
     }
 
     start() {
-        setTimeout(() => {
             for (let i = this.count; i > 0; i--) {
-                console.log(i);
+                setTimeout(() => console.log(i), (this.count - i + 1) * 1000);
             }
-            console.log("Jay Guru Dev");
-        }, 0)
+            setTimeout(() => console.log("Jay Guru Dev"), (this.count + 1) * 1000);
     }
 }
 
